@@ -6677,7 +6677,7 @@ var SETDEX_SV = {
       ],
       "nature": "Sassy",
       "item": "Sablenite",
-      "index": 1994
+      "index": 1996
     }
   },
   "Dustox": {
@@ -7613,7 +7613,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Gyaradosite",
-      "index": 1985
+      "index": 1987
     }
   },
   "Delcatty": {
@@ -8354,7 +8354,7 @@ var SETDEX_SV = {
       ],
       "nature": "Impish",
       "item": "Eject Button",
-      "index": 1977
+      "index": 1978
     }
   },
   "Corsola": {
@@ -8771,7 +8771,7 @@ var SETDEX_SV = {
       ],
       "nature": "Adamant",
       "item": "Iapapa Berry",
-      "index": 2033
+      "index": 2035
     }
   },
   "Solrock": {
@@ -8989,7 +8989,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Focus Sash",
-      "index": 2022
+      "index": 2024
     }
   },
   "Aerodactyl-Mega": {
@@ -9880,7 +9880,7 @@ var SETDEX_SV = {
       ],
       "nature": "Naive",
       "item": "Lucarionite",
-      "index": 2013
+      "index": 2015
     },
     "Elite Four Rival Doubles": {
       "level": 100,
@@ -9893,7 +9893,7 @@ var SETDEX_SV = {
       ],
       "nature": "Naive",
       "item": "Lucarionite",
-      "index": 2020
+      "index": 2022
     }
   },
   "Alomomola": {
@@ -10001,7 +10001,7 @@ var SETDEX_SV = {
       ],
       "nature": "Quiet",
       "item": "Focus Sash",
-      "index": 1980
+      "index": 1982
     }
   },
   "Type: Null": {
@@ -11033,7 +11033,7 @@ var SETDEX_SV = {
       ],
       "nature": "Careful",
       "item": "Covert Cloak",
-      "index": 1987
+      "index": 1989
     }
   },
   "Poliwrath": {
@@ -12663,7 +12663,7 @@ var SETDEX_SV = {
       ],
       "nature": "Bold",
       "item": "Heavy-Duty Boots",
-      "index": 1976
+      "index": 1977
     }
   },
   "Arctovish": {
@@ -13991,7 +13991,7 @@ var SETDEX_SV = {
       ],
       "nature": "Adamant",
       "item": "Assault Vest",
-      "index": 2015
+      "index": 2017
     }
   },
   "Rotom": {
@@ -14396,7 +14396,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Eject Pack",
-      "index": 2029
+      "index": 2031
     }
   },
   "Sceptile-Mega": {
@@ -15999,7 +15999,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Absolite",
-      "index": 1992
+      "index": 1994
     }
   },
   "Arcanine": {
@@ -17235,7 +17235,7 @@ var SETDEX_SV = {
       ],
       "nature": "Modest",
       "item": "Throat Spray",
-      "index": 2024
+      "index": 2026
     }
   },
   "Quaquaval": {
@@ -17831,7 +17831,7 @@ var SETDEX_SV = {
         "sd": "31",
         "sp": "30"
       },
-      "index": 2040
+      "index": 2042
     }
   },
   "Armarouge": {
@@ -18814,7 +18814,7 @@ var SETDEX_SV = {
       ],
       "nature": "Adamant",
       "item": "Normal Gem",
-      "index": 1978
+      "index": 1979
     }
   },
   "Maushold": {
@@ -18911,7 +18911,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Focus Sash",
-      "index": 1997
+      "index": 1999
     }
   },
   "Kangaskhan-Mega": {
@@ -20081,7 +20081,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Leftovers",
-      "index": 2010
+      "index": 2012
     }
   },
   "Solgaleo": {
@@ -20700,7 +20700,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Gengarite",
-      "index": 2001
+      "index": 2003
     }
   },
   "Gliscor": {
@@ -20808,7 +20808,7 @@ var SETDEX_SV = {
       ],
       "nature": "Adamant",
       "item": "Assault Vest",
-      "index": 1982
+      "index": 1984
     },
     "Elite Four Sidney Doubles": {
       "level": 100,
@@ -20821,7 +20821,7 @@ var SETDEX_SV = {
       ],
       "nature": "Adamant",
       "item": "Assault Vest",
-      "index": 1989
+      "index": 1991
     }
   },
   "Crobat": {
@@ -20903,7 +20903,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Focus Sash",
-      "index": 2008
+      "index": 2010
     }
   },
   "Necrozma": {
@@ -20998,7 +20998,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Wise Glasses",
-      "index": 2005
+      "index": 2007
     }
   },
   "Rhyperior": {
@@ -21362,7 +21362,7 @@ var SETDEX_SV = {
       ],
       "nature": "Modest",
       "item": "Scope Lens",
-      "index": 2030
+      "index": 2032
     }
   },
   "Vanilluxe": {
@@ -21778,7 +21778,7 @@ var SETDEX_SV = {
       ],
       "nature": "Modest",
       "item": "Power Herb",
-      "index": 2042
+      "index": 2044
     }
   },
   "Mienshao": {
@@ -22416,7 +22416,7 @@ var SETDEX_SV = {
       ],
       "nature": "Careful",
       "item": "Sitrus Berry",
-      "index": 2017
+      "index": 2019
     }
   },
   "Lickilicky": {
@@ -23453,7 +23453,7 @@ var SETDEX_SV = {
       ],
       "nature": "Modest",
       "item": "Assault Vest",
-      "index": 2039
+      "index": 2041
     }
   },
   "Ho-Oh": {
@@ -23670,7 +23670,7 @@ var SETDEX_SV = {
       ],
       "nature": "Adamant",
       "item": "Binding Band",
-      "index": 2037
+      "index": 2039
     }
   },
   "Dondozo": {
@@ -23902,7 +23902,7 @@ var SETDEX_SV = {
       ],
       "nature": "Sassy",
       "item": "heldItem",
-      "index": 1995
+      "index": 1997
     }
   },
   "Hydrapple": {
@@ -24012,7 +24012,7 @@ var SETDEX_SV = {
       ],
       "nature": "Adamant",
       "item": "Chople Berry",
-      "index": 1984
+      "index": 1986
     },
     "Elite Four Sidney Doubles": {
       "level": 100,
@@ -24025,7 +24025,7 @@ var SETDEX_SV = {
       ],
       "nature": "Adamant",
       "item": "Chople Berry",
-      "index": 1991
+      "index": 1993
     }
   },
   "Oranguru": {
@@ -24433,7 +24433,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Salamencite",
-      "index": 2027
+      "index": 2029
     },
     "Elite Four Drake Doubles": {
       "level": 100,
@@ -24446,7 +24446,7 @@ var SETDEX_SV = {
       ],
       "nature": "Naive",
       "item": "Salamencite",
-      "index": 2034
+      "index": 2036
     }
   },
   "Corviknight": {
@@ -24672,7 +24672,7 @@ var SETDEX_SV = {
       ],
       "nature": "Quiet",
       "item": "Choice Specs",
-      "index": 2023
+      "index": 2025
     }
   },
   "Wailord": {
@@ -24800,7 +24800,7 @@ var SETDEX_SV = {
       ],
       "nature": "Calm",
       "item": "Iapapa Berry",
-      "index": 2004
+      "index": 2006
     }
   },
   "Wo-Chien": {
@@ -24858,7 +24858,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Flying Memory",
-      "index": 2011
+      "index": 2013
     }
   },
   "Shedinja": {
@@ -25541,7 +25541,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Fighting Gem",
-      "index": 1996
+      "index": 1998
     }
   },
   "Silvally-Water": {
@@ -25703,7 +25703,7 @@ var SETDEX_SV = {
       ],
       "nature": "Naive",
       "item": "heldItem",
-      "index": 2014
+      "index": 2016
     },
     "Elite Four Rival Doubles": {
       "level": 100,
@@ -25716,7 +25716,7 @@ var SETDEX_SV = {
       ],
       "nature": "Naive",
       "item": "heldItem",
-      "index": 2021
+      "index": 2023
     }
   },
   "Klefki": {
@@ -26113,7 +26113,7 @@ var SETDEX_SV = {
       ],
       "nature": "Adamant",
       "item": "Leftovers",
-      "index": 1975
+      "index": 1976
     }
   },
   "Moltres-Galar": {
@@ -26141,7 +26141,7 @@ var SETDEX_SV = {
       ],
       "nature": "Bold",
       "item": "Sitrus Berry",
-      "index": 1983
+      "index": 1985
     }
   },
   "Fezandipiti": {
@@ -26483,7 +26483,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "heldItem",
-      "index": 1993
+      "index": 1995
     }
   },
   "Cresselia": {
@@ -26610,7 +26610,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Mewtwonite X",
-      "index": 1979
+      "index": 1980
     },
     "Elite Four Rival Singles": {
       "level": 100,
@@ -26623,7 +26623,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Expert Belt",
-      "index": 2012
+      "index": 2014
     },
     "Elite Four Rival Doubles": {
       "level": 100,
@@ -26636,7 +26636,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Twisted Spoon",
-      "index": 2019
+      "index": 2021
     }
   },
   "Silvally-Grass": {
@@ -26761,7 +26761,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "heldItem",
-      "index": 2002
+      "index": 2004
     }
   },
   "Gourgeist-Large": {
@@ -26949,7 +26949,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Roseli Berry",
-      "index": 2032
+      "index": 2034
     }
   },
   "Darmanitan": {
@@ -27432,7 +27432,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "heldItem",
-      "index": 1986
+      "index": 1988
     }
   },
   "Ninetales-Alola": {
@@ -27623,7 +27623,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Eject Pack",
-      "index": 2003
+      "index": 2005
     }
   },
   "Slowbro-Mega": {
@@ -27979,7 +27979,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Booster Energy",
-      "index": 1999
+      "index": 2001
     },
     "Elite Four Phoebe Doubles": {
       "level": 100,
@@ -27992,7 +27992,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Booster Energy",
-      "index": 2006
+      "index": 2008
     }
   },
   "Guzzlord": {
@@ -28211,7 +28211,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Wellspring Mask",
-      "index": 2016
+      "index": 2018
     }
   },
   "Tatsugiri-Stretchy": {
@@ -28262,7 +28262,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Booster Energy",
-      "index": 2025
+      "index": 2027
     },
     "Elite Four Drake Doubles": {
       "level": 100,
@@ -28275,7 +28275,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Booster Energy",
-      "index": 2031
+      "index": 2033
     }
   },
   "Kartana": {
@@ -28331,7 +28331,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Focus Sash",
-      "index": 1988
+      "index": 1990
     }
   },
   "Azelf": {
@@ -28571,7 +28571,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Hearthflame Mask",
-      "index": 2009
+      "index": 2011
     }
   },
   "Raging Bolt": {
@@ -28846,7 +28846,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Weakness Policy",
-      "index": 1981
+      "index": 1983
     }
   },
   "Kyurem": {
@@ -28897,7 +28897,7 @@ var SETDEX_SV = {
         "sd": "31",
         "sp": "30"
       },
-      "index": 2041
+      "index": 2043
     }
   },
   "Urshifu-Rapid-Strike": {
@@ -29008,7 +29008,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "heldItem",
-      "index": 2028
+      "index": 2030
     },
     "Elite Four Drake Doubles": {
       "level": 100,
@@ -29021,7 +29021,7 @@ var SETDEX_SV = {
       ],
       "nature": "Naive",
       "item": "heldItem",
-      "index": 2035
+      "index": 2037
     }
   },
   "Rayquaza-Mega": {
@@ -29219,6 +29219,21 @@ var SETDEX_SV = {
       "index": 1952
     }
   },
+  "Mewtwo-Mega-Y": {
+    "Teacher Anabel": {
+      "level": 100,
+      "ability": "Unnerve",
+      "moves": [
+        "Calm Mind",
+        "Psystrike",
+        "Ice Beam",
+        "Flamethrower"
+      ],
+      "nature": "Timid",
+      "item": "Mewtwonite Y",
+      "index": 1974
+    }
+  },
   "Necrozma-Dawn-Wings": {
     "Frontier Head Noland": {
       "level": 100,
@@ -29231,7 +29246,22 @@ var SETDEX_SV = {
       ],
       "nature": "Modest",
       "item": "Enigma Berry",
-      "index": 1974
+      "index": 1975
+    }
+  },
+  "Mewtwo-Mega-X": {
+    "Frontier Head Noland": {
+      "level": 100,
+      "ability": "Unnerve",
+      "moves": [
+        "Low Kick",
+        "Lash Out",
+        "Iron Tail",
+        "Bulk Up"
+      ],
+      "nature": "Jolly",
+      "item": "Mewtwonite X",
+      "index": 1981
     }
   },
   "Yveltal": {
@@ -29246,7 +29276,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Black Glasses",
-      "index": 1990
+      "index": 1992
     }
   },
   "Giratina-Origin": {
@@ -29261,7 +29291,7 @@ var SETDEX_SV = {
       ],
       "nature": "Jolly",
       "item": "Griseous Core",
-      "index": 1998
+      "index": 2000
     }
   },
   "Calyrex-Shadow": {
@@ -29276,7 +29306,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Colbur Berry",
-      "index": 2000
+      "index": 2002
     },
     "Elite Four Phoebe Doubles": {
       "level": 100,
@@ -29289,7 +29319,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Ghost Gem",
-      "index": 2007
+      "index": 2009
     }
   },
   "Silvally-Fairy": {
@@ -29304,7 +29334,7 @@ var SETDEX_SV = {
       ],
       "nature": "Hasty",
       "item": "Fairy Memory",
-      "index": 2018
+      "index": 2020
     }
   },
   "Dialga": {
@@ -29319,7 +29349,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Adamant Orb",
-      "index": 2026
+      "index": 2028
     }
   },
   "Palkia-Origin": {
@@ -29334,7 +29364,7 @@ var SETDEX_SV = {
       ],
       "nature": "Timid",
       "item": "Lustrous Globe",
-      "index": 2036
+      "index": 2038
     }
   },
   "Genesect-Douse": {
@@ -29349,7 +29379,7 @@ var SETDEX_SV = {
       ],
       "nature": "Naive",
       "item": "Douse Drive",
-      "index": 2038
+      "index": 2040
     }
   }
 }
