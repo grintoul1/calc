@@ -386,7 +386,7 @@ th {
     margin: 1em 0;
 }
 .set-selector {
-    width: 100%;
+    width: 30em;
 }
 .info-selectors select {
     width: 12em;
@@ -447,6 +447,7 @@ table.field {
 /* select2 overrides */
 .select2-container .select2-choice > .select2-chosen {
     width: 100%;
+    overflow-wrap: normal;
 }
 .small-select.select2-container .select2-choice {
     font-size: 0.9em;
