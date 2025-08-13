@@ -88,10 +88,10 @@ def generate_webpage(trainers):
 
     for trainer in trainers:
         site_str += f'<table class="content-table">\n'
-        if trainer.double_battle == "Yes":
-            site_str += f'<caption class="caption-content">{trainer.name} [Double Battle]</caption>\n'
+        if trainer.double_battle == "Doubles":
+            site_str += f'<caption class="caption-content">{trainer.name} [2v2]</caption>\n'
         else:
-            site_str += f'<caption class="caption-content">{trainer.name}</caption>\n'
+            site_str += f'<caption class="caption-content">{trainer.name} [2v1]</caption>\n'
         site_str += f'<tbody>\n'
 
         # images
@@ -194,65 +194,176 @@ def parse_parties(parties):
     trainer_parties = []
     trainer = None
     pokemon = None
-    trainer_name = None
-    trainer_class = None
-
+    pokemon1 = None
+    pokemon2 = None
+    pokemon3 = None
+    trainer_1_name = None
+    trainer_2_name = None
+    trainer_1_class = None
+    trainer_2_class = None
     prev_line = None
     parsing_mon = False
+    mon_1_parsed = False
+    mon_2_parsed = False
+    mon_3_parsed = False
+    stage_one = True
+    stage_two = False
+    stage_three = False
+    stage_four = False
     mon_index = 0
-
+    battle_type = None
+    
     for line in parties:
         if "REGULAR TRAINERS END" in line:
             break
 
-        if "Name" in line:
-            trainer_name = line.split(':')[1].strip()
-        elif "Class" in line:
-            trainer_class = line.split(':')[1].strip()
-            trainer = Trainer()
-            trainer.name = trainer_class + " " + trainer_name
-        elif "Battle Type:" in line:
-            trainer.double_battle = line.split(':')[1].strip()
-        elif "=== TRAINER_" in line and prev_line == '\n':
-            trainer_parties.append(trainer)
-        elif "=== TRAINER_" not in line and prev_line == '\n':
-            parsing_mon = True
-            pokemon = Pokemon()
-            if "@" in line and prev_line == '\n':
-                pokemon.species = line.split('@')[0].strip() 
-                pokemon.item = line.split('@')[1].strip()
-            elif "@" not in line and prev_line == '\n':
-                pokemon.species = line.split('\n')[0].strip()
-        elif parsing_mon:
-            if line == "\n":
-                parsing_mon = False
-                pokemon.index = mon_index
-                mon_index += 1
-                trainer.party.append(pokemon)
-            elif "Ability:" in line:
-                pokemon.ability = line.split(':')[1].strip()
-            elif "Level:" in line:
-                pokemon.level = line.split(':')[1].strip()
-            elif "Tera Type:" in line:
-                pokemon.teraType = line.split(':')[1].strip()
-            elif "Status:" in line:
-                pokemon.status = line.split(':')[1].strip()
-            elif "Nature:" in line:
-                pokemon.nature = line.split(':')[1].strip()
-            elif "IVs:" in line:
-                pokemon.ivs = line.split(':')[1].strip()
-                ivs_str = []
-                for i in pokemon.ivs.split(" / "):
-                    ivs_str.append(i.split(" ")[0].strip())
-                ivs = {"hp": int(ivs_str[0]),
-                       "at": int(ivs_str[1]),
-                       "df": int(ivs_str[2]),
-                       "sa": int(ivs_str[3]),
-                       "sd": int(ivs_str[4]),
-                       "sp": int(ivs_str[5]),}
-                pokemon.ivs = ivs
-            elif "- " in line:
-                pokemon.moves.append(line[1:].strip())
+        if stage_one == True:
+            if "Name" in line:
+                if "/*" in line:
+                    trainer_1_name = line.split(':')[1].strip()
+                    trainer_1_name = trainer_1_name.split(' /*')[0].strip() + " " + trainer_1_name.split('/*')[1].strip()
+                    trainer_1_name = trainer_1_name.split('*/')[0].strip()
+                else:
+                    trainer_1_name = line.split(':')[1].strip()
+            elif "Class" in line:
+                trainer_1_class = line.split(':')[1].strip()
+                if "Mixed" in line:
+                    trainer_1_class = trainer_1_class.split(' Mixed')[0].strip()
+            elif "Battle Type:" in line:
+                battle_type = line.split(': ')[1].strip()
+            elif prev_line == '\n':
+                if battle_type == "Singles":
+                    trainer = Trainer()
+                    trainer.name = trainer_1_class + " " + trainer_1_name
+                    stage_four = True
+                    stage_one = False
+                else:
+                    stage_two = True
+                    stage_one = False
+
+        if stage_two == True:
+            if "=== TRAINER_" in line and prev_line == '\n':
+                stage_two = False
+                stage_three = True
+            elif "=== TRAINER_" not in line and prev_line == '\n':
+                pokemon = Pokemon()
+                parsing_mon = True
+                if "@" in line and prev_line == '\n':
+                    pokemon.species = line.split('@')[0].strip() 
+                    pokemon.item = line.split('@')[1].strip()
+                elif "@" not in line and prev_line == '\n':
+                    pokemon.species = line.split('\n')[0].strip()
+            elif parsing_mon:
+                if line == "\n":
+                    parsing_mon = False
+                    pokemon.index = mon_index
+                    mon_index += 1
+                    if mon_1_parsed == False:
+                        pokemon1 = Pokemon()
+                        pokemon1 = pokemon
+                        mon_1_parsed = True
+                    elif mon_2_parsed == False:
+                        pokemon2 = Pokemon()
+                        pokemon2 = pokemon
+                        mon_2_parsed = True
+                    elif mon_3_parsed == False:
+                        pokemon3 = Pokemon()
+                        pokemon3 = pokemon
+                        mon_3_parsed = True
+                elif "Ability:" in line:
+                    pokemon.ability = line.split(':')[1].strip()
+                elif "Level:" in line:
+                    pokemon.level = line.split(':')[1].strip()
+                elif "Tera Type:" in line:
+                    pokemon.teraType = line.split(':')[1].strip()
+                elif "Status:" in line:
+                    pokemon.status = line.split(':')[1].strip()
+                elif "Nature" in line:
+                    pokemon.nature = line.split(' ')[0].strip()
+                elif "IVs:" in line:
+                    pokemon.ivs = line.split(':')[1].strip()
+                    ivs_str = []
+                    for i in pokemon.ivs.split(" / "):
+                        ivs_str.append(i.split(" ")[0].strip())
+                    ivs = {"hp": int(ivs_str[0]),
+                        "at": int(ivs_str[1]),
+                        "df": int(ivs_str[2]),
+                        "sa": int(ivs_str[3]),
+                        "sd": int(ivs_str[4]),
+                        "sp": int(ivs_str[5]),}
+                    pokemon.ivs = ivs
+                elif "- " in line:
+                    pokemon.moves.append(line[1:].strip())
+
+        if stage_three == True:
+            if "Name" in line:
+                if "/*" in line:
+                    trainer_2_name = line.split(':')[1].strip()
+                    trainer_2_name = trainer_2_name.split(' /*')[0].strip() + " " + trainer_2_name.split('/*')[1].strip()
+                    trainer_2_name = trainer_2_name.split('*/')[0].strip()
+                else:
+                    trainer_2_name = line.split(':')[1].strip()
+            elif "Class" in line:
+                trainer_2_class = line.split(':')[1].strip()
+                if "Mixed" in line:
+                    trainer_2_class = trainer_2_class.split(' Mixed')[0].strip()
+                trainer = Trainer()
+                trainer.name = trainer_1_class + " " + trainer_1_name + " & " + trainer_2_class + " " + trainer_2_name
+                stage_three = False
+                stage_four = True
+                if mon_1_parsed == True:
+                    trainer.party.append(pokemon1)
+                if mon_2_parsed == True:
+                    trainer.party.append(pokemon2)
+                if mon_3_parsed == True:
+                    trainer.party.append(pokemon3)
+                    
+        if stage_four == True:
+            if "=== TRAINER_" in line and prev_line == '\n':
+                trainer_parties.append(trainer)
+                stage_one = True
+                stage_four = False
+                mon_1_parsed = False
+                mon_2_parsed = False
+                mon_3_parsed = False
+            elif "=== TRAINER_" not in line and prev_line == '\n':
+                parsing_mon = True
+                pokemon = Pokemon()
+                if "@" in line and prev_line == '\n':
+                    pokemon.species = line.split('@')[0].strip() 
+                    pokemon.item = line.split('@')[1].strip()
+                elif "@" not in line and prev_line == '\n':
+                    pokemon.species = line.split('\n')[0].strip()
+            elif parsing_mon:
+                if line == "\n":
+                    parsing_mon = False
+                    pokemon.index = mon_index
+                    mon_index += 1
+                    trainer.party.append(pokemon)
+                elif "Ability:" in line:
+                    pokemon.ability = line.split(':')[1].strip()
+                elif "Level:" in line:
+                    pokemon.level = line.split(':')[1].strip()
+                elif "Tera Type:" in line:
+                    pokemon.teraType = line.split(':')[1].strip()
+                elif "Status:" in line:
+                    pokemon.status = line.split(':')[1].strip()
+                elif "Nature" in line:
+                    pokemon.nature = line.split(' ')[0].strip()
+                elif "IVs:" in line:
+                    pokemon.ivs = line.split(':')[1].strip()
+                    ivs_str = []
+                    for i in pokemon.ivs.split(" / "):
+                        ivs_str.append(i.split(" ")[0].strip())
+                    ivs = {"hp": int(ivs_str[0]),
+                        "at": int(ivs_str[1]),
+                        "df": int(ivs_str[2]),
+                        "sa": int(ivs_str[3]),
+                        "sd": int(ivs_str[4]),
+                        "sp": int(ivs_str[5]),}
+                    pokemon.ivs = ivs
+                elif "- " in line:
+                    pokemon.moves.append(line[1:].strip())
 
         prev_line = line
 
